@@ -4,7 +4,7 @@ API bancária desenvolvida em **Java com Spring Boot**, criada como projeto de e
 
 O objetivo do projeto é colocar em prática conceitos de **Java, Programação Orientada a Objetos, Spring Boot, APIs REST, JPA e banco de dados**.
 
-## 🚀 Tecnologias
+##  Tecnologias
 
 * Java 21
 * Spring Boot
@@ -15,7 +15,7 @@ O objetivo do projeto é colocar em prática conceitos de **Java, Programação 
 * Maven
 * Docker
 
-## 📌 Objetivo
+##  Objetivo
 
 O JBank foi desenvolvido para praticar conceitos de desenvolvimento backend utilizando o ecossistema Java e Spring Boot.
 
@@ -40,7 +40,7 @@ Conforme avanço nos estudos de Spring Boot, pretendo aplicar novos conceitos ao
 * Técnicas para garantir a integridade das transações e controle de concorrência.
 * Consultas avançadas com JPA Projections para otimização de queries complexas.
 
-## 📂 Estrutura do projeto
+##  Estrutura do projeto
 
 ```text
 src
