@@ -30,7 +30,7 @@ Durante o desenvolvimento, estou colocando em prática e estudando conceitos com
 * Tratamento de exceções
 * Organização de um projeto Spring Boot
 
-## 📚 Conceitos em estudo
+##  Conceitos em estudo
 
 Conforme avanço nos estudos de Spring Boot, pretendo aplicar novos conceitos ao projeto, incluindo:
 
@@ -52,7 +52,7 @@ src
         └── application.properties
 ```
 
-## ⚙️ Como executar
+##  Como executar
 
 ### Pré-requisitos
 
@@ -89,7 +89,7 @@ No Windows:
 mvnw.cmd spring-boot:run
 ```
 
-## 🗄️ Banco de dados
+## Banco de dados
 
 O projeto utiliza **MySQL** para persistência dos dados.
 
@@ -109,15 +109,15 @@ spring.datasource.password=sua_senha
 spring.jpa.hibernate.ddl-auto=update
 ```
 
-> ⚠️ Não coloque senhas ou informações sensíveis diretamente no repositório público.
+>  Não coloque senhas ou informações sensíveis diretamente no repositório público.
 
-## 🚧 Status do projeto
+## Status do projeto
 
 **Em desenvolvimento**
 
 Este projeto faz parte do meu processo de aprendizado em **Java e Spring Boot** e continuará recebendo novas funcionalidades e melhorias conforme avanço nos estudos.
 
-## 👨‍💻 Sobre mim
+## Sobre mim
 
 Sou estudante de **Análise e Desenvolvimento de Sistemas**, atualmente focado em **Java e desenvolvimento backend**.
 
@@ -125,4 +125,4 @@ Estou utilizando projetos como o JBank para colocar em prática os conhecimentos
 
 ---
 
-⭐ Se este projeto foi útil para você, considere deixar uma estrela no repositório!
+ Se este projeto foi útil para você, considere deixar uma estrela no repositório!
