@@ -2,17 +2,19 @@ package caiodev.jbank.entities;
 
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.DecimalMin;
+import jakarta.validation.constraints.NotNull;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
-@Table(name = "tb_deposity")
-public class Deposity {
+@Table(name = "tb_deposits")
+public class Deposits {
 
     @Id
-    @Column(name = "deposity_id")
+    @Column(name = "deposits_id")
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID deposityId;
 
@@ -20,23 +22,23 @@ public class Deposity {
     @JoinColumn(name = "wallet_id")
     private Wallet wallet;
 
-    @Column(name = "deposity_value")
+    @Column(name = "deposits_value")
     private BigDecimal depositVallue;
 
-    @Column(name = "deposit_date_time")
+    @Column(name = "deposits_date_time")
     private LocalDateTime depositDateTime;
 
     @Column(name = "ip_adress")
     private String ipAdress;
 
-    public Deposity() {
+    public Deposits() {
     }
 
-    public UUID getDeposityId() {
+    public UUID getDepositsId() {
         return deposityId;
     }
 
-    public void setDeposityId(UUID deposityId) {
+    public void setDepositsId(UUID deposityId) {
         this.deposityId = deposityId;
     }
 
@@ -48,7 +50,7 @@ public class Deposity {
         this.wallet = wallet;
     }
 
-    public BigDecimal getDepositVallue() {
+    public BigDecimal getDepositVallue(@NotNull @DecimalMin("10.00") BigDecimal value) {
         return depositVallue;
     }
 

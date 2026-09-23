@@ -2,12 +2,15 @@ package caiodev.jbank.controller;
 
 import caiodev.jbank.controller.dto.CreateWalletDto;
 import caiodev.jbank.controller.dto.DepositMoneyDto;
+import caiodev.jbank.controller.dto.StatementDto;
 import caiodev.jbank.service.WalletService;
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
+import java.sql.Statement;
 import java.util.UUID;
 
 @RestController
@@ -39,11 +42,27 @@ public class WalletController {
     }
     @PostMapping(path = "/{walletId}/deposits")
     public ResponseEntity<Void> depositMoney(@PathVariable("walletId") UUID walletId,
-                                             @RequestBody @Valid DepositMoneyDto dto ) {
+                                             @RequestBody @Valid DepositMoneyDto dto,
+                                             HttpServletRequest servletRequest) {
 
-        var deleted = walletService.depositMoney(walletId, dto);
+       walletService.depositMoney(
+                walletId,
+                dto,
+                servletRequest.getAttribute("x-user-ip").toString()
+        );
+
+        return ResponseEntity.ok().build();
 
 
+    }
+
+    @GetMapping("/{walletId}/statements")
+    public ResponseEntity<StatementDto> getStatements(@PathVariable("walletId") UUID walletId,
+                                                      @RequestParam (name = "page", defaultValue = "0") Integer page,
+                                                      @RequestParam (name = "pageSize", defaultValue = "10")Integer pageSize) {
+        var statements = walletService.getStatements(walletId, page, pageSize);
+
+        return ResponseEntity.ok(statements);
     }
 
 
