@@ -19,7 +19,7 @@ O objetivo do projeto é colocar em prática conceitos de **Java, Programação 
 
 O JBank foi desenvolvido para praticar conceitos de desenvolvimento backend utilizando o ecossistema Java e Spring Boot.
 
-Durante o desenvolvimento, estou colocando em prática conceitos como:
+Durante o desenvolvimento, estou colocando em prática e estudando conceitos como:
 
 * Programação Orientada a Objetos
 * Criação de APIs REST
@@ -27,7 +27,18 @@ Durante o desenvolvimento, estou colocando em prática conceitos como:
 * Persistência de dados com JPA/Hibernate
 * Integração com MySQL
 * Validação de dados
+* Tratamento de exceções
 * Organização de um projeto Spring Boot
+
+## 📚 Conceitos em estudo
+
+Conforme avanço nos estudos de Spring Boot, pretendo aplicar novos conceitos ao projeto, incluindo:
+
+* Filters e Interceptors para manipulação e auditoria de requests e responses.
+* Arquitetura do Spring Web e criação de Handlers personalizados.
+* Validações avançadas com Hibernate Validator e tratamento de exceções.
+* Técnicas para garantir a integridade das transações e controle de concorrência.
+* Consultas avançadas com JPA Projections para otimização de queries complexas.
 
 ## 📂 Estrutura do projeto
 
@@ -66,6 +77,8 @@ cd JBank
 
 ### Execute o projeto
 
+No Linux/macOS:
+
 ```bash
 ./mvnw spring-boot:run
 ```
@@ -98,11 +111,11 @@ spring.jpa.hibernate.ddl-auto=update
 
 > ⚠️ Não coloque senhas ou informações sensíveis diretamente no repositório público.
 
-## 📚 Status do projeto
+## 🚧 Status do projeto
 
-🚧 **Em desenvolvimento**
+**Em desenvolvimento**
 
-Este projeto faz parte do meu processo de aprendizado em **Java e Spring Boot** e poderá receber novas funcionalidades conforme avanço nos estudos.
+Este projeto faz parte do meu processo de aprendizado em **Java e Spring Boot** e continuará recebendo novas funcionalidades e melhorias conforme avanço nos estudos.
 
 ## 👨‍💻 Sobre mim
 
